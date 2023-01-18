@@ -18,6 +18,7 @@ function onLogoutClick(event) {
   event.preventDefault();
   greeting.classList.add(HIDDEN_CLASSNAME);
   logoutbtn.classList.add(HIDDEN_CLASSNAME);
+  loginInput.value = "";
   localStorage.removeItem(USERNAME_KEY);
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   loginForm.addEventListener("submit", onLoginSubmit);
